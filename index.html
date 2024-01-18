@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application</title>
+</head>
+<body>
+    <form>
+        <table>
+            <tr><th>Applecation Creation Form</th></tr>
+            <tr><td>Feilds marked with an asteris(*) are requried</td></tr>
+            <tr><td>First Name*</td></tr>
+            <tr>
+                <td><input type="text" placeholder="Enter your name"></td>
+            </tr>
+            <tr><td>Middle Name*</td></tr>
+            <tr><td><input type="text" placeholder="Enter your midle name"></td></tr>
+            <tr><td>Last Name*</td></tr>
+            <tr><td><input type="text" placeholder="Enter your Last  name"></td></tr>
+            <tr></tr><td>Email Address*</td></tr>
+            <tr><td><input type="text" placeholder="Enter your email address"></td></tr>
+            <tr><td>Birthdate</td></tr>
+    <tr><td><select>
+        <option value="january">january</option> <option value="Februaury">February</option><option value="March">March</option>
+        <option value="April">April</option><option value="May">May</option><option value="jun">jun</option>
+        <option value="July">July</option><option value="August">August</option><option value="Septamber">september</option>
+        <option value="October">October</option><option value="November">November<option value="December">December</option></option>
+     </select></td> <td><select><option value="1">1</option> <option value="2">2</option>
+            <option value="3">3</option> <option value="4">4</option> <option value="5">5</option> <option value="6">6</option>
+            <option value="7">7</option> <option value="8">8</option> <option value="9">9</option>
+            <option value="10">10</option> <option value="11">11</option> <option value="12">12</option></select></td>
+            <td><select><option value="2004">2004</option> <option value="2005">2005</option><option value="2006">2006</option>
+                <option value="2007">2007</option><option value="2008">2008</option><option value="2009">2009</option></select></td></tr>
+         
+            
+            <tr><td>Malling address*</td></tr>
+            <tr><td>Country</td></tr>
+            <tr><td><select>
+                <option>United state</option>
+                <option> lahore</option>
+                <option> krachi</option>
+                <option> islamabad</option>
+                <option> quetta</option>
+            </select></td></tr>
+            <tr><td>Street</td></tr>
+            <tr><td><input type="text"></td></tr>
+            <tr><td>City</td></tr>
+            <tr><td><input type="text" ></td></tr>
+            <tr><td>State</td></tr>
+            <tr><td><input type="text" ></td></tr>
+            <tr><td>Postal Code</td></tr>
+            <tr><td><input type="text" ></td></tr>
+            <tr><td>Which program are you applying to?</td></tr>
+            <tr><td><select>
+                <option>Computer Science</option>
+                <option>English</option>
+                <option >Urdu</option>
+                <option>Math</option>
+            </select></td></tr>
+            <tr><td>Please tell us why are you interested in this program*</td></tr>
+            <tr><td><textarea ></textarea></td></tr>
+        </table>
+        <button>Submit</button>
+    </form>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+</body>
+</html>
